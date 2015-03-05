@@ -30,6 +30,7 @@ module Commontator
     :vote_count_proc,
     :comment_order,
     :new_comment_style,
+    :new_comment_position,
     :comments_per_page,
     :thread_subscription,
     :email_from_proc,

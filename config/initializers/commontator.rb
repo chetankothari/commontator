@@ -178,8 +178,6 @@ Commontator.configure do |config|
   #   :l is usually used in blogs (opinions)
   #   :ve and :vl are usually used where it makes sense to rate comments
   #     based on usefulness (q&a, reviews, guides, etc.)
-  # If :l is selected, the "reply to thread" form will appear before the comments
-  # Otherwise, it will appear after the comments
   # Default: :e
   config.comment_order = :e
 
@@ -193,6 +191,15 @@ Commontator.configure do |config|
   #   :n (link to the form; opens in a new window)
   # Default: :l
   config.new_comment_style = :l
+
+  # new_comment_position
+  # Type: Symbol
+  # Where to display the "new comment" form
+  # Valid options:
+  #   :b (before all the comments)
+  #   :a (after all the commetns)
+  # Default: :a
+  # config.new_comment_position = :b
 
   # comments_per_page
   # Type: Fixnum or nil

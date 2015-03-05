@@ -51,7 +51,7 @@
         :closer_name => (thread.is_closed? ? Commontator.commontator_name(thread.closer) : '') %>
 </span>
 
-<% if thread.config.comment_order == :l %>
+<% if thread.config.new_comment_position == :b %>
   <%= render :partial => 'commontator/threads/reply',
              :locals => { :thread => thread, :user => user, :per_page => per_page } %>
 <% end %>
@@ -88,7 +88,7 @@
   </div>
 <% end %>
 
-<% if thread.config.comment_order != :l %>
+<% if thread.config.new_comment_position == :a %>
   <%= render :partial => 'commontator/threads/reply',
              :locals => { :thread => thread, :user => user, :per_page => per_page } %>
 <% end %>
